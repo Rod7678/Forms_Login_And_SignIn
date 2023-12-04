@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and sign in <form action=""></form></title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">FOrm</a>
+            <div class="align-right">
+                <button class="icon-btn setting-btn place-item-center">
+                    <i class="ri-settings-2-line"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="form">
+        <div class="form-box">
+           <div class="button-box">
+            <div class="" id="btn"></div>
+            <button  class="toggle-btn" onclick="login()">Log In</button>
+            <button  class="toggle-btn" onclick="signin()">Sign In</button>
+           </div> 
+           <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="UserName" required>
+            <input type="password" class="input-field" placeholder="Password" required>
+            <button class="submit-btn">Log In</button>
+           </form>
+           <form id="signin" class="input-group">
+            <input type="text" class="input-field" placeholder="UserName" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="password" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the term and conditions</span>
+            <button class="submit-btn">Sign In</button>
+           </form>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

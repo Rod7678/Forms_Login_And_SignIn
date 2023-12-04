@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Rock+Salt&display=swap');
+:root{
+    --light-color: #ffffff;
+    --dark-color: #ff00ff;
+    --dark-color-lighter: #cda4c6;
+    --accent-color: #ae22be;
+    --body-background-color: #e4e4ef;
+    --border-bottom-color: rgba(255, 255, 255,.05);
+    --transparent-button-color: rgba(255, 255, 255,.1);
+    --font-size-small: 1.4rem;
+    --font-size-normal: 1.6rem;
+    --font-size-medium: 2rem;
+    --font-size-large: 2.4rem;
+    --font-family: 'Poppins', sans-serif;
+    --margin-small: 1rem;
+    --margin-medium: 1.5rem;
+    --gap-small: 1rem;
+    --gap-medium: 2.5rem;
+}
+/* Basic css */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size-normal);
+    color: var(--light-color);
+    line-height: 1.5;
+    background-color: var(--body-background-color);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+i{
+    font-size: var(--font-size-large);
+    line-height: 0;
+}
+/* Reusable classes */
+.container{
+    max-width: 134rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Header */
+.header{
+    background-color: var(--dark-color-lighter);
+    box-shadow:.5rem .5rem .5rem #bb68ad;
+}
+.nav{
+    height: 6rem;
+    align-items: center;
+    display: flex;
+}
+.logo{
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    font-size: var(--font-size-medium);
+}
+.icon-btn{
+    position: fixed;
+    top: 1.4rem;
+    right: 1.4rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+/* Form page */
+.form{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+    background: transparent;
+    overflow: hidden;
+}
+.form-box:hover{
+    box-shadow: .5rem .5rem .5rem var(--accent-color);
+}
+.button-box{
+    width: 225px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px var(--dark-color-lighter);
+    border-radius: 30px ;
+}
+.toggle-btn{
+    padding: 10px 30px;    
+    position: relative;
+    /* color: var(--dark-color); */
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 115px;
+    height: 100%;
+    background: linear-gradient(to right,var( --dark-color),var(--dark-color-lighter));
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid var(--dark-color);
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,var( --dark-color),var(--dark-color-lighter));
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+    
+}
+span{
+    color: var(--dark-color);
+    font-size: var(--font-size-small);
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+}
+#signin{
+    left: 450px;
+}
